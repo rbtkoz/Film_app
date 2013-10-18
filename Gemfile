@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem "twitter-bootstrap-rails"
+
+gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -30,6 +33,11 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+gem 'therubyracer'
+
+group :assets do
+  gem 'less'
 end
 
 # Use ActiveModel has_secure_password
